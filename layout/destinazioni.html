@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div style="background-color: whitesmoke" class="container-fluid">
-          <a style=" font-family: Arial, sans-serif; color: black; text-align: center;" class="navbar-brand" href="/index.html">Viaggi fantastici</a>
+          <a style=" font-family: Arial, sans-serif; color: black; text-align: center;" class="navbar-brand" href="#">Viaggi fantastici</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
           </button>
@@ -26,42 +26,55 @@
           </div>
         </div>
     </nav>
-
-    <section id="destinazioni" class="container py-5">
-        <h2 class="text-center mb-4">Destinazioni Popolari</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="/immagini/islanda.jpg" class="card-img-top" alt="Destinazione 1">
-              <div class="card-body">
-                <h5 class="card-title">Islanda</h5>
-                <p class="card-text">Esplora le meraviglie naturali e le affascinanti città islandesi.</p>
-                <a href="#" class="btn btn-primary">Esplora</a>
-              </div>
+    
+    <div style="position: relative; text-align: center; color: whitesmoke; margin-bottom: 20px;">
+        <h2 style="position: absolute; top: 20px; width: 100%; z-index: 10; font-size: 2.5rem; font-weight: bold;">
+            Gira il mondo con Viaggi fantastici
+        </h2>
+    </div>
+    
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img style="max-width: 90%; margin:auto; border-radius: 50px;" src="immagini/islanda.jpg" class="d-block w-100" alt="Islanda">
+            <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="/immagini/tokyo.jpg" class="card-img-top" alt="Destinazione 2">
-              <div class="card-body">
-                <h5 class="card-title">Tokyo</h5>
-                <p class="card-text">Vivi l'energia vibrante della capitale giapponese.</p>
-                <a href="#" class="btn btn-primary">Esplora</a>
-              </div>
+          <div class="carousel-item">
+            <img style="max-width: 90%; margin:auto; border-radius: 50px;" src="immagini/tokyo.jpg" class="d-block w-100" alt="Tokyo">
+            <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="/immagini/marocco.jpg" class="card-img-top" alt="Destinazione 3">
-              <div class="card-body">
-                <h5 class="card-title">Marocco</h5>
-                <p class="card-text">Scopri i colori, i profumi e la storia millenaria delle città imperiali.</p>
-                <a href="#" class="btn btn-primary">Esplora</a>
-              </div>
+          <div class="carousel-item">
+            <img style="max-width: 90%; margin:auto; border-radius: 50px;" src="immagini/marocco.jpg" class="d-block w-100" alt="Morocco">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img style="max-width: 90%; margin:auto; border-radius: 50px;" src="immagini/egitto.jpg" class="d-block w-100" alt="Morocco">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img style="max-width: 90%; margin:auto; border-radius: 50px;" src="immagini/thailandia.jpg" class="d-block w-100" alt="Morocco">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img style="max-width: 90%; margin:auto; border-radius: 50px;" src="immagini/sud africa.jpg" class="d-block w-100" alt="Morocco">
+            <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
         </div>
-    </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
     <footer class="bg-light py-4">
         <div class="container text-center">
